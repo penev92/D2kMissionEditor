@@ -47,6 +47,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MissionEditor.FileReaderCore\MissionEditor.FileReaderCore.csproj">
+      <Project>{3b92d9e3-24cd-4318-8557-5932d9408cf5}</Project>
+      <Name>MissionEditor.FileReaderCore</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
