@@ -7,8 +7,8 @@
     <ProjectGuid>{3B92D9E3-24CD-4318-8557-5932D9408CF5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MissionEditor.FileReader</RootNamespace>
-    <AssemblyName>MissionEditor.FileReader</AssemblyName>
+    <RootNamespace>MissionEditor.FileReaderCore</RootNamespace>
+    <AssemblyName>MissionEditor.FileReaderCore</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,9 +39,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Condition.cs" />
+    <Compile Include="Conditions\BaseDestroyed.cs" />
+    <Compile Include="Conditions\BuildingExists.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\Cash.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\Casualties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\ConditionFactory.cs" />
+    <Compile Include="Conditions\Dummy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\Interval.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\Timer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conditions\UnitExists.cs" />
+    <Compile Include="Conditions\UnitInTile.cs" />
+    <Compile Include="Conditions\UnitsDestroyed.cs" />
+    <Compile Include="AISection.cs" />
+    <Compile Include="Exts.cs" />
+    <Compile Include="MissionStruct.cs" />
+    <Compile Include="Events\Berserk.cs" />
+    <Compile Include="Events\Diplomacy.cs" />
+    <Compile Include="Events\EventFactory.cs" />
+    <Compile Include="Events\Message.cs" />
+    <Compile Include="Events\MissionFail.cs" />
+    <Compile Include="Events\MissionWin.cs" />
+    <Compile Include="Events\Reinforcement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\RevealMap.cs" />
+    <Compile Include="Events\SetCondition.cs" />
+    <Compile Include="Events\StarportDelivery.cs" />
+    <Compile Include="Events\TimeLimitDisable.cs" />
+    <Compile Include="Events\UnitSpawn.cs" />
+    <Compile Include="Events\Unknown6.cs" />
+    <Compile Include="Statics.cs" />
+    <Compile Include="MissionFileItem.cs" />
+    <Compile Include="DiplomacyRow.cs" />
+    <Compile Include="Event.cs" />
     <Compile Include="FileReader.cs" />
+    <Compile Include="Mission.cs" />
+    <Compile Include="Mission_old.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

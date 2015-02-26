@@ -44,6 +44,68 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConditionUI\BaseDestroyedUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionUI\BaseDestroyedUI.Designer.cs">
+      <DependentUpon>BaseDestroyedUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConditionUI\BuildingExistsUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionUI\BuildingExistsUI.Designer.cs">
+      <DependentUpon>BuildingExistsUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConditionUI\CashUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionUI\CashUI.Designer.cs">
+      <DependentUpon>CashUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConditionUI\CasualtiesUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionUI\CasualtiesUI.Designer.cs">
+      <DependentUpon>CasualtiesUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConditionUI\DummyUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionUI\DummyUI.Designer.cs">
+      <DependentUpon>DummyUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConditionUI\IConditionUI.cs" />
+    <Compile Include="ConditionUI\IntervalUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionUI\IntervalUI.Designer.cs">
+      <DependentUpon>IntervalUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConditionUI\TimerUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionUI\TimerUI.Designer.cs">
+      <DependentUpon>TimerUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConditionUI\UnitExistsUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionUI\UnitExistsUI.Designer.cs">
+      <DependentUpon>UnitExistsUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConditionUI\UnitInTileUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionUI\UnitInTileUI.Designer.cs">
+      <DependentUpon>UnitInTileUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConditionUI\UnitsDestroyedUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionUI\UnitsDestroyedUI.Designer.cs">
+      <DependentUpon>UnitsDestroyedUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +114,45 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectConditionTypeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectConditionTypeDialog.Designer.cs">
+      <DependentUpon>SelectConditionTypeDialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConditionUI\BaseDestroyedUI.resx">
+      <DependentUpon>BaseDestroyedUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConditionUI\BuildingExistsUI.resx">
+      <DependentUpon>BuildingExistsUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConditionUI\CashUI.resx">
+      <DependentUpon>CashUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConditionUI\CasualtiesUI.resx">
+      <DependentUpon>CasualtiesUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConditionUI\DummyUI.resx">
+      <DependentUpon>DummyUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConditionUI\IntervalUI.resx">
+      <DependentUpon>IntervalUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConditionUI\TimerUI.resx">
+      <DependentUpon>TimerUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConditionUI\UnitExistsUI.resx">
+      <DependentUpon>UnitExistsUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConditionUI\UnitInTileUI.resx">
+      <DependentUpon>UnitInTileUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConditionUI\UnitsDestroyedUI.resx">
+      <DependentUpon>UnitsDestroyedUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -60,7 +161,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SelectConditionTypeDialog.resx">
+      <DependentUpon>SelectConditionTypeDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,6 +184,12 @@
       <Project>{3b92d9e3-24cd-4318-8557-5932d9408cf5}</Project>
       <Name>MissionEditor.FileReaderCore</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="openIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="saveIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
